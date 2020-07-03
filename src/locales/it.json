@@ -1,0 +1,156 @@
+{
+  "common": {
+    "curriculumVitae": "Curriculum vitae"
+  },
+  "header": {
+    "title": "Ash Ketchum",
+    "subtitle": "Allenatore Pokémon, Campione della Orange League"
+  },
+  "details": {
+    "informations": {
+      "title": "Informazioni",
+      "content": [
+        {
+          "title": "Nome e cognome",
+          "value": "Ash Calem Ketchum"
+        },
+        {
+          "title": "Data di nascita",
+          "value": "21/05/1987"
+        },
+        {
+          "title": "Città natale",
+          "value": "Pallet Town (Kanto)"
+        },
+        {
+          "separator": true
+        },
+        {
+          "title": "E-mail",
+          "email": "ash.ketchum87@gmail.com"
+        },
+        {
+          "title": "Sito web",
+          "value": "Pokémon official website",
+          "link": "https://www.pokemon.com"
+        }
+      ]
+    },
+    "education": {
+      "title": "Istruzione",
+      "content": [
+        {
+          "title": "Oak Summer Camp",
+          "type": "Pokémon Summer Camp",
+          "description": "Partecipazione al campo estivo organizzato da Professor Oak. "
+        },
+        {
+          "title": "Alola Trainers' School",
+          "type": "Pokémon Academy",
+          "description": "Studi presso l'accademia Pokémon situata nell'isola Melemele (Alola)."
+        }
+      ]
+    },
+    "languageSkills": {
+      "title": "Conoscenze linguistiche",
+      "content": [
+        {
+          "title": "Giapponese",
+          "written": "Scritto: madrelingua",
+          "oral": "Orale: madrelingua"
+        },
+        {
+          "title": "Inglese",
+          "written": "Scritto: professionale",
+          "oral": "Orale: professionale"
+        }
+      ]
+    },
+    "yearsOfExperience": {
+      "title": "Anni di esperienza",
+      "content": [
+        {
+          "title": "Allenatore Pokémon",
+          "value": "Allenatore Pokémon e vincitore di diverse leghe",
+          "years": "19 anni"
+        },
+        {
+          "title": "Poké-influencer",
+          "value": "Protagonista di diversi videogiochi e serie animate",
+          "years": "Oltre 20 anni"
+        }
+      ]
+    },
+    "professionalSkills": {
+      "title": "Capacità e competenze professionali",
+      "content": [
+        "Sono un allenatore pokémon di grande esperienza, attualmente giro il mondo per scoprire e catturare più pokémon possibili.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit faucibus orci luctus. Duis venenatis porttitor quam, sed suscipit augue faucibus non. Vestibulum tempus elit tempor posuere malesuada.",
+        "Aliquam quis vulputate ligula, fermentum imperdiet lacus. Aenean finibus eros interdum, dignissim urna id, rutrum dui. Vestibulum eget gravida odio."
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "company": "Niantic",
+      "link": "https://nianticlabs.com",
+      "task": "Vivamus facilisis, nunc pharetra ornare elementum",
+      "date": "2016 - oggi",
+      "teamSize": "team di ~650 persone",
+      "description": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis porttitor quam, sed suscipit augue faucibus non. Vestibulum tempus elit tempor posuere malesuada.",
+        "Nulla eget dui eu orci malesuada pellentesque at a lectus. Nulla dui mi, commodo non ipsum ac, pretium venenatis velit. Morbi blandit fermentum tellus id convallis."
+      ],
+      "tags": [
+        "Pokémon GO",
+        "Android",
+        "iOS"
+      ],
+      "tagsSecondary": [
+        "Windows Phone"
+      ]
+    },
+    {
+      "company": "Nintendo",
+      "link": "https://www.nintendo.com",
+      "task": "Aliquam consequat est facilisis, consequat ex vel, malesuada quam",
+      "date": "1996 - oggi",
+      "teamSize": "team di ~3500 persone",
+      "description": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis porttitor quam, sed suscipit augue faucibus non. Vestibulum tempus elit tempor posuere malesuada.",
+        "Pellentesque vel euismod risus. Suspendisse viverra sapien vestibulum, ornare risus non, convallis mi. Nullam a nisl vel faucibus orci luctus lacus ornare accumsan."
+      ],
+      "projectSections": [
+        {
+          "title": "Altri dettagli",
+          "projects": [
+            {
+              "title": "Pokémon (serie animata)",
+              "link": "https://www.nintendo.com",
+              "date": "1997 - oggi",
+              "description": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus quam et leo tempus fringilla. Sed quis risus aliquam, rhoncus leo et, malesuada ligula."
+              ],
+              "tags": [
+                "Anime",
+                "Movies"
+              ]
+            },
+            {
+              "title": "Pokémon (videogioco)",
+              "link": "https://www.nintendo.com",
+              "date": "1996 - oggi",
+              "description": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis porttitor quam, sed suscipit augue faucibus non. Vestibulum tempus elit tempor posuere."
+              ],
+              "tags": [
+                "Game Boy Color",
+                "Game Boy Advanced"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
