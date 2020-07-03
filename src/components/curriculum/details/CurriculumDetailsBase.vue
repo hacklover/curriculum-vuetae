@@ -18,7 +18,7 @@
             <template v-else-if="item && item.link">
               <td v-text="item.title" />
               <td>
-                <a :href="item.link" target="_blank">
+                <a :href="item.link" target="_blank" rel="noopener noreferrer">
                   {{item.value}}
                 </a>
               </td>

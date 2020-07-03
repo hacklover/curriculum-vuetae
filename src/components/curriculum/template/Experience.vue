@@ -13,7 +13,7 @@
 
       <!-- experience title -->
       <div class="experience-title">
-        <a :href="url" target="_blank" v-if="url">
+        <a :href="url" target="_blank" rel="noopener noreferrer" v-if="url">
           <strong v-text="title" />
         </a>
         <strong v-text="title" v-else />

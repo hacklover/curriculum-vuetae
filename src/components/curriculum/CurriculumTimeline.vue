@@ -43,7 +43,7 @@
                       <!-- project title -->
                       <div class="link-title">
                         <div v-text="project.date" />
-                        <a :href="project.link" target="_blank" v-text="project.title" />
+                        <a :href="project.link" target="_blank" rel="noopener noreferrer" v-text="project.title" />
                       </div>
 
                       <!-- project description -->
