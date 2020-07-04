@@ -153,12 +153,14 @@
       }
 
       nav, main {
-        padding: 0 25px;
+        padding-left: 25px;
+        padding-right: 25px;
       }
     }
 
     main {
-      padding: 30px 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
 
       .column-side {
         padding-left: 0;
