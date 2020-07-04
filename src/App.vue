@@ -108,7 +108,7 @@ export default {
     }
 
     main {
-      margin: 30px 0;
+      padding: 30px 0;
 
       .column-side {
         padding-left: 0;

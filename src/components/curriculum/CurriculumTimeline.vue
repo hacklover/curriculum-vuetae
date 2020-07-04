@@ -117,29 +117,21 @@
 </script>
 
 <style lang="less">
-  #app {
-    .timeline {
-      .timeline-header {
-        .tag {
-          background: #555;
-        }
+  .timeline {
+    .timeline-item {
+      padding-bottom: 1.2em !important;
+
+      .timeline-marker {
+        top: 1.78rem !important;
       }
 
-      .timeline-item {
-        padding-bottom: 1.2em;
-
-        .timeline-marker {
-          top: 1.78rem !important;
-        }
-
-        .timeline-content {
-          padding: 1.69em 0 0 2em !important;
-        }
+      .timeline-content {
+        padding: 1.69em 0 0 2em !important;
       }
     }
+  }
 
-    .timeline.is-centered .timeline-item:nth-of-type(2n) .timeline-content {
-      padding: 1.69em 2em 0 0 !important;
-    }
+  .timeline.is-centered .timeline-item:nth-of-type(2n) .timeline-content {
+    padding: 1.69em 2em 0 0 !important;
   }
 </style>

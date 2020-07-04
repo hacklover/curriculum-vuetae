@@ -65,6 +65,7 @@
 <style scoped lang="less">
   .card-curriculum-details-base {
     table {
+      background: rgba(0, 0, 0, 0.05);
       border-collapse: inherit;
 
       td.td-separator {

@@ -22,7 +22,7 @@
 </script>
 
 <style lang="less">
-  nav div.nav-languages {
+  nav.navbar div.nav-languages {
     font-size: 14px;
     float: right;
 
