@@ -3,7 +3,7 @@ export default {
     common: {
       background: '#ffe118',
       link: '#444',
-      heading: '#9e954c',
+      heading: 'rgba(0, 0, 0, 0.2)',
       text: '#444',
       subtitle: '#c5b42a',
       separator: '#eccd00',
@@ -17,7 +17,7 @@ export default {
     header: {
       title: '#333',
       subtitle: '#9e954c',
-      backgroundColor: '#ffe118',
+      backgroundColor: 'rgba(0, 0, 0, 0.03)',
       backgroundImage: 'none',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
