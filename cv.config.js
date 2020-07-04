@@ -9,7 +9,11 @@ export default {
   },
 
   // themes folder: "src/themes/"
-  theme: 'pikachu',
+  theme: {
+    name: 'pikachu',
+    showNav: true,
+    showLogo: true
+  },
 
   // feel free to hide the copyright notice but remember to
   // donate if you like or you have been hired using Curriculum Vuetae :D

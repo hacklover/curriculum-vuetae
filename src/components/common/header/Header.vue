@@ -4,6 +4,10 @@
     <div class="hero-body">
       <div class="container">
 
+        <div class="logo" v-if="showLogo">
+          <img src="assets/logo.png" alt="" />
+        </div>
+
         <p class="title" v-text="$t('header.title')" />
         <p class="subtitle" v-text="$t('header.subtitle')" />
 
@@ -14,8 +18,15 @@
 </template>
 
 <script>
+  import curriculumConfig from '../../../../cv.config'
+
   export default {
-    name: "Header"
+    name: "Header",
+    computed: {
+      showLogo() {
+        return curriculumConfig.theme.showLogo
+      }
+    }
   }
 </script>
 
@@ -29,6 +40,14 @@
     background-position: var(--app-header-background-position);
     background-attachment: var(--app-header-background-attachment);
     padding: 30px 0;
+
+    .logo {
+      display: inline-block;
+      float: left;
+      width: 64px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
 
     .title {
       color: var(--app-header-title);

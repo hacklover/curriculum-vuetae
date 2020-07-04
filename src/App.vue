@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <Nav />
+    <Nav v-if="showNav" />
     <Header />
 
     <main>
@@ -28,106 +28,110 @@
 </template>
 
 <script>
-import curriculumConfig from '../cv.config'
+  import curriculumConfig from '../cv.config'
 
-import Nav from './components/common/nav/Nav.vue'
-import Header from './components/common/header/Header.vue'
-import CurriculumDetails from "./components/curriculum/CurriculumDetails";
-import CurriculumTimeline from './components/curriculum/CurriculumTimeline.vue'
-import Footer from "./components/common/footer/Footer";
+  import Nav from './components/common/nav/Nav.vue'
+  import Header from './components/common/header/Header.vue'
+  import CurriculumDetails from "./components/curriculum/CurriculumDetails";
+  import CurriculumTimeline from './components/curriculum/CurriculumTimeline.vue'
+  import Footer from "./components/common/footer/Footer";
 
-export default {
-  name: 'app',
-  components: {
-    Nav,
-    Header,
-    Footer,
-    CurriculumDetails,
-    CurriculumTimeline
-  },
-  computed: {
-    showCopyright() {
-      return curriculumConfig.showCopyright
-    }
-  },
-  methods: {
-    /**
-     * Load defined theme in "cv.config.js"
-     */
-    async loadActiveTheme() {
-      const activeTheme = curriculumConfig.theme;
-
-      return import(`./themes/${activeTheme}`)
-        .then(theme => theme.default)
-        .catch(() => {
-          console.error(`Unable to load "${activeTheme}" theme from "src/themes/" folder`)
-          return false
-        })
+  export default {
+    name: 'app',
+    components: {
+      Nav,
+      Header,
+      Footer,
+      CurriculumDetails,
+      CurriculumTimeline
     },
-    /**
-     * Append to <head> some custom color CSS
-     */
-    appendCustomStyles(theme) {
-      const css = `:root {\n` +
-        `  --app-background-color: ${theme.app.common.background};\n` +
-        `  --app-text-color: ${theme.app.common.text};\n` +
-        `  --app-link-color: ${theme.app.common.link};\n` +
-        `  --app-heading-color: ${theme.app.common.heading};\n` +
-        `  --app-subtitle-color: ${theme.app.common.subtitle};\n` +
-        `  --app-separator-color: ${theme.app.common.separator};\n` +
-        `  --app-table-color: ${theme.app.common.table};\n` +
+    computed: {
+      showNav() {
+        return curriculumConfig.theme.showNav
+      },
+      showCopyright() {
+        return curriculumConfig.showCopyright
+      }
+    },
+    methods: {
+      /**
+       * Load defined theme in "cv.config.js"
+       */
+      async loadActiveTheme() {
+        const themeName = curriculumConfig.theme.name;
 
-        `  --app-nav-background-color: ${theme.app.nav.background};\n` +
-        `  --app-nav-text-color: ${theme.app.nav.text};\n` +
-        `  --app-nav-text-color: ${theme.app.nav.text};\n` +
-        `  --app-nav-language-color: ${theme.app.nav.language};\n` +
+        return import(`./themes/${themeName}`)
+          .then(theme => theme.default)
+          .catch(() => {
+            console.error(`Unable to load "${themeName}" theme from "src/themes/" folder`)
+            return false
+          })
+      },
+      /**
+       * Append to <head> some custom color CSS
+       */
+      appendCustomStyles(theme) {
+        const css = `:root {\n` +
+          `  --app-background-color: ${theme.app.common.background};\n` +
+          `  --app-text-color: ${theme.app.common.text};\n` +
+          `  --app-link-color: ${theme.app.common.link};\n` +
+          `  --app-heading-color: ${theme.app.common.heading};\n` +
+          `  --app-subtitle-color: ${theme.app.common.subtitle};\n` +
+          `  --app-separator-color: ${theme.app.common.separator};\n` +
+          `  --app-table-color: ${theme.app.common.table};\n` +
 
-        `  --app-header-title: ${theme.app.header.title};\n` +
-        `  --app-header-subtitle: ${theme.app.header.subtitle};\n` +
-        `  --app-header-background-color: ${theme.app.header.backgroundColor};\n` +
-        `  --app-header-background-image: ${theme.app.header.backgroundImage};\n` +
-        `  --app-header-background-repeat: ${theme.app.header.backgroundRepeat};\n` +
-        `  --app-header-background-size: ${theme.app.header.backgroundSize};\n` +
-        `  --app-header-background-position: ${theme.app.header.backgroundPosition};\n` +
-        `  --app-header-background-attachment: ${theme.app.header.backgroundAttachment};\n` +
+          `  --app-nav-background-color: ${theme.app.nav.background};\n` +
+          `  --app-nav-text-color: ${theme.app.nav.text};\n` +
+          `  --app-nav-text-color: ${theme.app.nav.text};\n` +
+          `  --app-nav-language-color: ${theme.app.nav.language};\n` +
 
-        `  --app-footer-background-color: ${theme.app.footer.background};\n` +
-        `  --app-footer-text-color: ${theme.app.footer.text};\n` +
-        `  --app-footer-link-color: ${theme.app.footer.link};\n` +
+          `  --app-header-title: ${theme.app.header.title};\n` +
+          `  --app-header-subtitle: ${theme.app.header.subtitle};\n` +
+          `  --app-header-logo: ${theme.app.header.logo};\n` +
+          `  --app-header-background-color: ${theme.app.header.backgroundColor};\n` +
+          `  --app-header-background-image: ${theme.app.header.backgroundImage};\n` +
+          `  --app-header-background-repeat: ${theme.app.header.backgroundRepeat};\n` +
+          `  --app-header-background-size: ${theme.app.header.backgroundSize};\n` +
+          `  --app-header-background-position: ${theme.app.header.backgroundPosition};\n` +
+          `  --app-header-background-attachment: ${theme.app.header.backgroundAttachment};\n` +
 
-        `  --experience-title-color: ${theme.experience.title};\n` +
-        `  --experience-text-color: ${theme.experience.text};\n` +
-        `  --experience-tag-primary-color: ${theme.experience.tag.primary};\n` +
-        `  --experience-tag-secondary-color: ${theme.experience.tag.secondary};\n` +
+          `  --app-footer-background-color: ${theme.app.footer.background};\n` +
+          `  --app-footer-text-color: ${theme.app.footer.text};\n` +
+          `  --app-footer-link-color: ${theme.app.footer.link};\n` +
 
-        `  --project-title-color: ${theme.experience.project.title};\n` +
-        `  --project-text-color: ${theme.experience.project.text};\n` +
-        `  --project-tag-primary-color: ${theme.experience.project.tag.primary};\n` +
-        `  --project-tag-secondary-color: ${theme.experience.project.tag.secondary};\n` +
-        `}`;
+          `  --experience-title-color: ${theme.experience.title};\n` +
+          `  --experience-text-color: ${theme.experience.text};\n` +
+          `  --experience-tag-primary-color: ${theme.experience.tag.primary};\n` +
+          `  --experience-tag-secondary-color: ${theme.experience.tag.secondary};\n` +
 
-      const head = document.head || document.getElementsByTagName('head')[0];
-      const style = document.createElement('style');
+          `  --project-title-color: ${theme.experience.project.title};\n` +
+          `  --project-text-color: ${theme.experience.project.text};\n` +
+          `  --project-tag-primary-color: ${theme.experience.project.tag.primary};\n` +
+          `  --project-tag-secondary-color: ${theme.experience.project.tag.secondary};\n` +
+          `}`;
 
-      head.appendChild(style);
+        const head = document.head || document.getElementsByTagName('head')[0];
+        const style = document.createElement('style');
 
-      style.type = 'text/css';
-      if (style.styleSheet){
-        // This is required for IE8 and below.
-        style.styleSheet.cssText = css;
-      } else {
-        style.appendChild(document.createTextNode(css));
+        head.appendChild(style);
+
+        style.type = 'text/css';
+        if (style.styleSheet) {
+          // This is required for IE8 and below.
+          style.styleSheet.cssText = css;
+        } else {
+          style.appendChild(document.createTextNode(css));
+        }
+      }
+    },
+    async mounted() {
+      const theme = await this.loadActiveTheme()
+
+      if (theme) {
+        this.appendCustomStyles(theme)
       }
     }
-  },
-  async mounted() {
-    const theme = await this.loadActiveTheme()
-
-    if (theme) {
-      this.appendCustomStyles(theme)
-    }
   }
-}
 </script>
 
 <style lang="less">
