@@ -41,7 +41,7 @@
       color: var(--app-heading-color);
       margin-bottom: 15px;
       padding-bottom: 13px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid var(--app-separator-color);
       user-select: none;
     }
 

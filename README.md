@@ -7,6 +7,7 @@
 - Supports multiple languages
 - Fields and sections dynamically rendered 
 - Easily customizable theme colors
+- Supports multiple themes
 - Made with [Vue.js](https://vuejs.org) & [Buefy](https://buefy.org)
 
 ## Quick start
@@ -15,10 +16,11 @@
   npm install
   ```
 
-- Configure available languages and theme colors by editing `cv.config.js`
+- Configure available languages and active theme by editing `cv.config.js`
 - Fill your CV with details and experiences by editing `src/locales/<your-lang>.json` 
-- Customize the background header replacing it in `src/assets/background.jpg`
-- Check the commands below to develop and build your curriculum vitae
+- Customize the background header replacing it in `public/assets/background.jpg`
+- Customize theme colors by editing `src/themes/<your-theme>.json`
+- Check the commands below to enable live preview and compile your curriculum vitae
 - You can export it as PNG or PDF with some browser extension like [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
 
 ### Compiles and hot-reloads for development

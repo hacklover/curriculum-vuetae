@@ -52,45 +52,58 @@ export default {
   },
   methods: {
     /**
+     * Load defined theme in "cv.config.js"
+     */
+    async loadActiveTheme() {
+      const activeTheme = curriculumConfig.theme;
+
+      return import(`./themes/${activeTheme}`)
+        .then(theme => theme.default)
+        .catch(() => {
+          console.error(`Unable to load "${activeTheme}" theme from "src/themes/" folder`)
+          return false
+        })
+    },
+    /**
      * Append to <head> some custom color CSS
      */
-    appendCustomStyles() {
+    appendCustomStyles(theme) {
       const css = `:root {\n` +
-        `  --app-background-color: ${curriculumConfig.theme.app.common.background};\n` +
-        `  --app-text-color: ${curriculumConfig.theme.app.common.text};\n` +
-        `  --app-link-color: ${curriculumConfig.theme.app.common.link};\n` +
-        `  --app-heading-color: ${curriculumConfig.theme.app.common.heading};\n` +
-        `  --app-subtitle-color: ${curriculumConfig.theme.app.common.subtitle};\n` +
-        `  --app-separator-color: ${curriculumConfig.theme.app.common.separator};\n` +
-        `  --app-table-color: ${curriculumConfig.theme.app.common.table};\n` +
+        `  --app-background-color: ${theme.app.common.background};\n` +
+        `  --app-text-color: ${theme.app.common.text};\n` +
+        `  --app-link-color: ${theme.app.common.link};\n` +
+        `  --app-heading-color: ${theme.app.common.heading};\n` +
+        `  --app-subtitle-color: ${theme.app.common.subtitle};\n` +
+        `  --app-separator-color: ${theme.app.common.separator};\n` +
+        `  --app-table-color: ${theme.app.common.table};\n` +
 
-        `  --app-nav-background-color: ${curriculumConfig.theme.app.nav.background};\n` +
-        `  --app-nav-text-color: ${curriculumConfig.theme.app.nav.text};\n` +
-        `  --app-nav-text-color: ${curriculumConfig.theme.app.nav.text};\n` +
-        `  --app-nav-language-color: ${curriculumConfig.theme.app.nav.language};\n` +
+        `  --app-nav-background-color: ${theme.app.nav.background};\n` +
+        `  --app-nav-text-color: ${theme.app.nav.text};\n` +
+        `  --app-nav-text-color: ${theme.app.nav.text};\n` +
+        `  --app-nav-language-color: ${theme.app.nav.language};\n` +
 
-        `  --app-header-title: ${curriculumConfig.theme.app.header.title};\n` +
-        `  --app-header-subtitle: ${curriculumConfig.theme.app.header.subtitle};\n` +
-        `  --app-header-background-color: ${curriculumConfig.theme.app.header.backgroundColor};\n` +
-        `  --app-header-background-image: ${curriculumConfig.theme.app.header.backgroundImage};\n` +
-        `  --app-header-background-repeat: ${curriculumConfig.theme.app.header.backgroundRepeat};\n` +
-        `  --app-header-background-size: ${curriculumConfig.theme.app.header.backgroundSize};\n` +
-        `  --app-header-background-position: ${curriculumConfig.theme.app.header.backgroundPosition};\n` +
-        `  --app-header-background-attachment: ${curriculumConfig.theme.app.header.backgroundAttachment};\n` +
+        `  --app-header-title: ${theme.app.header.title};\n` +
+        `  --app-header-subtitle: ${theme.app.header.subtitle};\n` +
+        `  --app-header-background-color: ${theme.app.header.backgroundColor};\n` +
+        `  --app-header-background-image: ${theme.app.header.backgroundImage};\n` +
+        `  --app-header-background-repeat: ${theme.app.header.backgroundRepeat};\n` +
+        `  --app-header-background-size: ${theme.app.header.backgroundSize};\n` +
+        `  --app-header-background-position: ${theme.app.header.backgroundPosition};\n` +
+        `  --app-header-background-attachment: ${theme.app.header.backgroundAttachment};\n` +
 
-        `  --app-footer-background-color: ${curriculumConfig.theme.app.footer.background};\n` +
-        `  --app-footer-text-color: ${curriculumConfig.theme.app.footer.text};\n` +
-        `  --app-footer-link-color: ${curriculumConfig.theme.app.footer.link};\n` +
+        `  --app-footer-background-color: ${theme.app.footer.background};\n` +
+        `  --app-footer-text-color: ${theme.app.footer.text};\n` +
+        `  --app-footer-link-color: ${theme.app.footer.link};\n` +
 
-        `  --experience-title-color: ${curriculumConfig.theme.experience.title};\n` +
-        `  --experience-text-color: ${curriculumConfig.theme.experience.text};\n` +
-        `  --experience-tag-primary-color: ${curriculumConfig.theme.experience.tag.primary};\n` +
-        `  --experience-tag-secondary-color: ${curriculumConfig.theme.experience.tag.secondary};\n` +
+        `  --experience-title-color: ${theme.experience.title};\n` +
+        `  --experience-text-color: ${theme.experience.text};\n` +
+        `  --experience-tag-primary-color: ${theme.experience.tag.primary};\n` +
+        `  --experience-tag-secondary-color: ${theme.experience.tag.secondary};\n` +
 
-        `  --project-title-color: ${curriculumConfig.theme.experience.project.title};\n` +
-        `  --project-text-color: ${curriculumConfig.theme.experience.project.text};\n` +
-        `  --project-tag-primary-color: ${curriculumConfig.theme.experience.project.tag.primary};\n` +
-        `  --project-tag-secondary-color: ${curriculumConfig.theme.experience.project.tag.secondary};\n` +
+        `  --project-title-color: ${theme.experience.project.title};\n` +
+        `  --project-text-color: ${theme.experience.project.text};\n` +
+        `  --project-tag-primary-color: ${theme.experience.project.tag.primary};\n` +
+        `  --project-tag-secondary-color: ${theme.experience.project.tag.secondary};\n` +
         `}`;
 
       const head = document.head || document.getElementsByTagName('head')[0];
@@ -107,8 +120,12 @@ export default {
       }
     }
   },
-  mounted() {
-    this.appendCustomStyles()
+  async mounted() {
+    const theme = await this.loadActiveTheme()
+
+    if (theme) {
+      this.appendCustomStyles(theme)
+    }
   }
 }
 </script>

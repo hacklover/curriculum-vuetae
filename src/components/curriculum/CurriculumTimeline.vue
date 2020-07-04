@@ -128,6 +128,7 @@
       .timeline-marker {
         top: 1.78rem !important;
         background: var(--app-separator-color) !important;
+        border-color: var(--app-separator-color) !important;
       }
 
       .timeline-content {
