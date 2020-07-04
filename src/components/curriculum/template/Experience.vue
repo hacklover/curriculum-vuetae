@@ -77,13 +77,14 @@
     }
 
     .experience-task {
-      color: #878787;
+      color: var(--app-subtitle-color);
       font-size: 15px;
       margin-bottom: 10px;
       user-select: none;
     }
 
     .experience-description {
+      color: var(--experience-text-color);
       max-width: 580px;
       font-size: 15px;
 
@@ -142,17 +143,13 @@
         margin-top: 12px;
         margin-left: 18px;
         list-style-type: square;
-        color: #888;
+        color: var(--project-text-color);
 
         li {
           font-size: 15px;
 
           &:not(:first-child) {
             margin-top: 20px;
-          }
-
-          sup {
-            color: #AAA;
           }
         }
 

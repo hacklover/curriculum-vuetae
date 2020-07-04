@@ -22,16 +22,20 @@
 <style scoped lang="less">
   header.hero {
     user-select: none;
-    background-color: #333;
-    background-image: url('../../../assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    background-attachment: fixed;
+    background-color: var(--app-header-background-color);
+    background-image: var(--app-header-background-image);
+    background-repeat: var(--app-header-background-repeat);
+    background-size: var(--app-header-background-size);
+    background-position: var(--app-header-background-position);
+    background-attachment: var(--app-header-background-attachment);
     padding: 30px 0;
 
+    .title {
+      color: var(--app-header-title);
+    }
+
     .subtitle {
-      opacity: 0.5;
+      color: var(--app-header-subtitle);
       font-size: 20px;
     }
 

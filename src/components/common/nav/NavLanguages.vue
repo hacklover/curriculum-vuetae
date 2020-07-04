@@ -33,7 +33,7 @@
         a {
           display: block;
           padding: 0 10px;
-          color: #444;
+          color: var(--app-nav-language-color);
         }
 
         &:not(.active) {

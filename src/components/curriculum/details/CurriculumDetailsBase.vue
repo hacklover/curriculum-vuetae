@@ -65,11 +65,15 @@
 <style scoped lang="less">
   .card-curriculum-details-base {
     table {
-      background: rgba(0, 0, 0, 0.05);
+      background: var(--app-table-color);
       border-collapse: inherit;
 
       td.td-separator {
         padding: 0;
+
+        hr {
+          background: var(--app-separator-color);
+        }
       }
     }
   }

@@ -56,11 +56,39 @@ export default {
      */
     appendCustomStyles() {
       const css = `:root {\n` +
-        `  --link-color: ${curriculumConfig.theme.link};\n` +
+        `  --app-background-color: ${curriculumConfig.theme.app.common.background};\n` +
+        `  --app-text-color: ${curriculumConfig.theme.app.common.text};\n` +
+        `  --app-link-color: ${curriculumConfig.theme.app.common.link};\n` +
+        `  --app-heading-color: ${curriculumConfig.theme.app.common.heading};\n` +
+        `  --app-subtitle-color: ${curriculumConfig.theme.app.common.subtitle};\n` +
+        `  --app-separator-color: ${curriculumConfig.theme.app.common.separator};\n` +
+        `  --app-table-color: ${curriculumConfig.theme.app.common.table};\n` +
+
+        `  --app-nav-background-color: ${curriculumConfig.theme.app.nav.background};\n` +
+        `  --app-nav-text-color: ${curriculumConfig.theme.app.nav.text};\n` +
+        `  --app-nav-text-color: ${curriculumConfig.theme.app.nav.text};\n` +
+        `  --app-nav-language-color: ${curriculumConfig.theme.app.nav.language};\n` +
+
+        `  --app-header-title: ${curriculumConfig.theme.app.header.title};\n` +
+        `  --app-header-subtitle: ${curriculumConfig.theme.app.header.subtitle};\n` +
+        `  --app-header-background-color: ${curriculumConfig.theme.app.header.backgroundColor};\n` +
+        `  --app-header-background-image: ${curriculumConfig.theme.app.header.backgroundImage};\n` +
+        `  --app-header-background-repeat: ${curriculumConfig.theme.app.header.backgroundRepeat};\n` +
+        `  --app-header-background-size: ${curriculumConfig.theme.app.header.backgroundSize};\n` +
+        `  --app-header-background-position: ${curriculumConfig.theme.app.header.backgroundPosition};\n` +
+        `  --app-header-background-attachment: ${curriculumConfig.theme.app.header.backgroundAttachment};\n` +
+
+        `  --app-footer-background-color: ${curriculumConfig.theme.app.footer.background};\n` +
+        `  --app-footer-text-color: ${curriculumConfig.theme.app.footer.text};\n` +
+        `  --app-footer-link-color: ${curriculumConfig.theme.app.footer.link};\n` +
+
         `  --experience-title-color: ${curriculumConfig.theme.experience.title};\n` +
+        `  --experience-text-color: ${curriculumConfig.theme.experience.text};\n` +
         `  --experience-tag-primary-color: ${curriculumConfig.theme.experience.tag.primary};\n` +
         `  --experience-tag-secondary-color: ${curriculumConfig.theme.experience.tag.secondary};\n` +
+
         `  --project-title-color: ${curriculumConfig.theme.experience.project.title};\n` +
+        `  --project-text-color: ${curriculumConfig.theme.experience.project.text};\n` +
         `  --project-tag-primary-color: ${curriculumConfig.theme.experience.project.tag.primary};\n` +
         `  --project-tag-secondary-color: ${curriculumConfig.theme.experience.project.tag.secondary};\n` +
         `}`;
@@ -94,7 +122,8 @@ export default {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    background: var(--app-background-color);
+    color: var(--app-text-color);
 
     @media screen and (max-width: 1472px) {
       .container {

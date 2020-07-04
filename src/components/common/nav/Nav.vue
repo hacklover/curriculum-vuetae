@@ -28,7 +28,8 @@
 
 <style scoped lang="less">
   nav.navbar {
-    background: inherit;
+    background: var(--app-nav-background-color);
+    padding-bottom: 1px;
     user-select: none;
 
     @media (max-width: 768px) {
@@ -42,7 +43,7 @@
 
       .navbar-item {
         padding-left: 0;
-        color: inherit;
+        color: var(--app-nav-text-color);
       }
     }
 

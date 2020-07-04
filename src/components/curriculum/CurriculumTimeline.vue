@@ -121,8 +121,13 @@
     .timeline-item {
       padding-bottom: 1.2em !important;
 
+      &:before {
+        background: var(--app-separator-color) !important;
+      }
+
       .timeline-marker {
         top: 1.78rem !important;
+        background: var(--app-separator-color) !important;
       }
 
       .timeline-content {

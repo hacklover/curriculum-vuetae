@@ -34,11 +34,11 @@
     font-size: 14px;
 
     a {
-      color: var(--link-color);
+      color: var(--app-link-color);
     }
 
     .title {
-      color: #a2a2a2;
+      color: var(--app-heading-color);
       margin-bottom: 15px;
       padding-bottom: 13px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@
       font-size: 15px;
 
       .subtitle {
-        color: #878787;
+        color: var(--app-subtitle-color);
         font-size: 15px;
         margin-bottom: 8px;
       }
@@ -80,7 +80,6 @@
       ul {
         margin-left: 18px;
         list-style-type: square;
-        color: #888;
 
         li {
           span {

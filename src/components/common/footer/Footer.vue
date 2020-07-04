@@ -22,15 +22,15 @@
 
 <style scoped lang="less">
   footer {
-    background-color: #eaeaea;
+    background-color: var(--app-footer-background-color);
     padding: 30px;
     user-select: none;
 
     div {
-      color: #CCC;
+      color: var(--app-footer-text-color);
 
       a {
-        color: #BBB;
+        color: var(--app-footer-link-color);
       }
     }
   }
