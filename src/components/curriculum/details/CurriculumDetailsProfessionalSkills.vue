@@ -26,9 +26,3 @@
     }
   }
 </script>
-
-<style scoped lang="less">
-  .card-curriculum-details-professional-skills {
-    margin-top: -22px;
-  }
-</style>

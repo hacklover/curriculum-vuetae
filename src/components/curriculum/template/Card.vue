@@ -1,8 +1,8 @@
 <template>
-  <div class="card-common">
-    <h4 class="title is-5 is-bold" v-text="title" />
+  <div class="common-card">
+    <h4 class="common-card-title title is-5 is-bold" v-text="title" />
 
-    <div class="content">
+    <div class="common-card-content content">
       <div class="columns">
 
         <div class="column column-info is-one-quarter" v-if="$slots['info']">
@@ -28,7 +28,7 @@
 </script>
 
 <style scoped lang="less">
-  .card-common {
+  .common-card {
     margin-bottom: 40px;
     box-shadow: none;
     font-size: 14px;
@@ -37,7 +37,7 @@
       color: var(--app-link-color);
     }
 
-    .title {
+    .common-card-title {
       color: var(--app-heading-color);
       margin-bottom: 15px;
       padding-bottom: 13px;
@@ -45,53 +45,62 @@
       user-select: none;
     }
 
-    table {
-      width: 100%;
-      font-size: 15px;
-      line-height: 12px;
-      border: 15px solid transparent;
-      background: #E1E1E1;
-      border-radius: 3px;
-
-      tr {
-        td {
-          padding: 0.5em;
-          border: 0;
-          line-height: 18px;
-
-          hr {
-            height: 1px;
-            background: #d0d0d0;
-            margin: 15px 5px;
+    .common-card-content {
+      @media screen and (max-width: 1020px) {
+        .columns {
+          .column {
+            width: 100%;
           }
         }
       }
-    }
 
-    .column-description {
-      color: var(--details-text-color);
-      font-size: 15px;
-
-      b {
-        color: var(--details-title-color);
-      }
-
-      .subtitle {
-        color: var(--details-subtitle-color);
+      table {
+        width: 100%;
         font-size: 15px;
-        margin-bottom: 8px;
+        line-height: 12px;
+        border: 15px solid transparent;
+        border-radius: 3px;
+
+        tr {
+          td {
+            padding: 0.5em;
+            border: 0;
+            line-height: 18px;
+
+            hr {
+              height: 1px;
+              background: #d0d0d0;
+              margin: 15px 5px;
+            }
+          }
+        }
       }
 
-      ul {
-        margin-left: 18px;
-        list-style-type: square;
-      }
+      .column-description {
+        color: var(--details-text-color);
+        font-size: 15px;
 
-      .tags {
-        max-width: 470px;
+        b {
+          color: var(--details-title-color);
+        }
 
-        @media (max-width: 768px) {
-          display: block;
+        .subtitle {
+          color: var(--details-subtitle-color);
+          font-size: 15px;
+          margin-bottom: 8px;
+        }
+
+        ul {
+          margin-left: 18px;
+          list-style-type: square;
+        }
+
+        .tags {
+          max-width: 470px;
+
+          @media (max-width: 768px) {
+            display: block;
+          }
         }
       }
     }

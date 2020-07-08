@@ -32,6 +32,10 @@
 <style scoped lang="less">
   .card-curriculum-details-years-of-experience {
     .column-description .row {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
       p.subtitle {
         margin: 0;
         font-size: 15px;
@@ -39,7 +43,6 @@
 
       div {
         margin-top: 3px;
-        margin-bottom: 15px;
       }
     }
   }

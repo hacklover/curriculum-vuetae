@@ -39,7 +39,7 @@
 </script>
 
 <style scoped lang="less">
-  .card-curriculum-details-language-skills{
+  .card-curriculum-details-language-skills {
     .columns {
       display: flow-root;
 

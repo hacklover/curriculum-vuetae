@@ -177,6 +177,12 @@
       @media (max-width: 1088px) {
         .column-side {
           padding-left: 1.5rem;
+
+          .timeline {
+            .timeline-item {
+              margin-left: 0;
+            }
+          }
         }
       }
 
@@ -184,17 +190,7 @@
         margin-bottom: 0;
 
         .column-side {
-          padding: 22px 22px 22px 22px;
-        }
-      }
-    }
-
-    @media screen and (max-width: 1020px) {
-      .columns {
-        display: block !important;
-
-        .column {
-          width: 100%;
+          padding: 13px;
         }
       }
     }
