@@ -45,8 +45,11 @@
       display: inline-block;
       float: left;
       width: 64px;
-      margin-right: 20px;
-      border-radius: 50%;
+      margin-right: 28px;
+
+      img {
+        border-radius: 50%;
+      }
     }
 
     .title {

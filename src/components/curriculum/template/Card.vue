@@ -69,10 +69,15 @@
     }
 
     .column-description {
+      color: var(--details-text-color);
       font-size: 15px;
 
+      b {
+        color: var(--details-title-color);
+      }
+
       .subtitle {
-        color: var(--app-subtitle-color);
+        color: var(--details-subtitle-color);
         font-size: 15px;
         margin-bottom: 8px;
       }
@@ -80,12 +85,6 @@
       ul {
         margin-left: 18px;
         list-style-type: square;
-
-        li {
-          span {
-            color: #2c3e50;
-          }
-        }
       }
 
       .tags {

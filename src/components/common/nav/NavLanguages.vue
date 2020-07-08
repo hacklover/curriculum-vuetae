@@ -23,6 +23,7 @@
 
 <style lang="less">
   nav.navbar div.nav-languages {
+    margin-right: -10px;
     font-size: 14px;
     float: right;
 

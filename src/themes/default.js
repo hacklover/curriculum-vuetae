@@ -2,10 +2,9 @@ export default {
   app: {
     common: {
       background: 'inherit',
-      link: '#167df0',
       heading: '#a2a2a2',
       text: '#2c3e50',
-      subtitle: '#888',
+      link: '#167df0',
       separator: '#D5D5D5',
       table: 'rgba(0, 0, 0, 0.03)'
     },
@@ -18,7 +17,7 @@ export default {
       title: 'white',
       subtitle: 'grey',
       backgroundColor: '#111',
-      backgroundImage: 'url(assets/background.jpg)',
+      backgroundImage: 'url(../assets/background.jpg)',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       backgroundPosition: 'center bottom',
@@ -30,19 +29,37 @@ export default {
       link: '#BBB'
     }
   },
+  details: {
+    title: '#2c3e50',
+    subtitle: '#888',
+    text: 'rgba(0, 0, 0, 0.75)'
+  },
   experience: {
     title: '#7957d5',
+    subtitle: '#888',
     text: 'initial',
     tag: {
-      primary: '#7957d5',
-      secondary: '#777'
+      primary: {
+        background: '#7957d5',
+        text: 'white'
+      },
+      secondary: {
+        background: '#777',
+        text: 'white'
+      }
     },
     project: {
       title: '#2fb1b9',
       text: '#888',
       tag: {
-        primary: '#2fb1b9',
-        secondary: '#777'
+        primary: {
+          background: '#2fb1b9',
+          text: 'white'
+        },
+        secondary: {
+          background: '#777',
+          text: 'white'
+        }
       }
     }
   }

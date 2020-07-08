@@ -1,23 +1,22 @@
 export default {
   app: {
     common: {
-      background: '#ffe118',
-      link: '#444',
-      heading: 'rgba(0, 0, 0, 0.2)',
-      text: '#444',
-      subtitle: '#c5b42a',
-      separator: '#eccd00',
+      background: '#ecca12',
+      heading: '#222',
+      text: 'black',
+      link: '#9a8200',
+      separator: '#dab800',
       table: 'rgba(0, 0, 0, 0.03)'
     },
     nav: {
       background: 'initial',
-      text: 'rgba(0, 0, 0, 0.2)',
+      text: '#222',
       language: 'initial'
     },
     header: {
-      title: '#333',
-      subtitle: '#9e954c',
-      backgroundColor: 'rgba(0, 0, 0, 0.03)',
+      title: 'white',
+      subtitle: '#7d7d7d',
+      backgroundColor: '#222',
       backgroundImage: 'none',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
@@ -30,19 +29,37 @@ export default {
       link: 'rgba(0, 0, 0, 0.25)'
     }
   },
+  details: {
+    title: '#8c710a',
+    subtitle: '#a99300',
+    text: 'rgba(0, 0, 0, 0.75)'
+  },
   experience: {
-    title: '#3494ff',
+    title: '#8c710a',
+    subtitle: '#a99300',
     text: 'rgba(0, 0, 0, 0.75)',
     tag: {
-      primary: '#555',
-      secondary: '#777'
+      primary: {
+        background: '#3494ff',
+        text: 'white'
+      },
+      secondary: {
+        background: '#3171bd',
+        text: 'white'
+      }
     },
     project: {
-      title: '#555',
-      text: 'rgba(0, 0, 0, 0.4)',
+      title: '#8c710a',
+      text: 'rgba(0, 0, 0, 0.5)',
       tag: {
-        primary: '#555',
-        secondary: '#777'
+        primary: {
+          background: '#debd09',
+          text: '#84710b'
+        },
+        secondary: {
+          background: '#debd09',
+          text: '#84710b'
+        }
       }
     }
   }

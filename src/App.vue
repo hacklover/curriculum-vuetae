@@ -76,7 +76,6 @@
           `  --app-text-color: ${theme.app.common.text};\n` +
           `  --app-link-color: ${theme.app.common.link};\n` +
           `  --app-heading-color: ${theme.app.common.heading};\n` +
-          `  --app-subtitle-color: ${theme.app.common.subtitle};\n` +
           `  --app-separator-color: ${theme.app.common.separator};\n` +
           `  --app-table-color: ${theme.app.common.table};\n` +
 
@@ -99,15 +98,24 @@
           `  --app-footer-text-color: ${theme.app.footer.text};\n` +
           `  --app-footer-link-color: ${theme.app.footer.link};\n` +
 
+          `  --details-title-color: ${theme.details.title};\n` +
+          `  --details-subtitle-color: ${theme.details.subtitle};\n` +
+          `  --details-text-color: ${theme.details.text};\n` +
+
           `  --experience-title-color: ${theme.experience.title};\n` +
+          `  --experience-subtitle-color: ${theme.experience.subtitle};\n` +
           `  --experience-text-color: ${theme.experience.text};\n` +
-          `  --experience-tag-primary-color: ${theme.experience.tag.primary};\n` +
-          `  --experience-tag-secondary-color: ${theme.experience.tag.secondary};\n` +
+          `  --experience-tag-primary-background-color: ${theme.experience.tag.primary.background};\n` +
+          `  --experience-tag-primary-text-color: ${theme.experience.tag.primary.text};\n` +
+          `  --experience-tag-secondary-background-color: ${theme.experience.tag.secondary.background};\n` +
+          `  --experience-tag-secondary-text-color: ${theme.experience.tag.secondary.text};\n` +
 
           `  --project-title-color: ${theme.experience.project.title};\n` +
           `  --project-text-color: ${theme.experience.project.text};\n` +
-          `  --project-tag-primary-color: ${theme.experience.project.tag.primary};\n` +
-          `  --project-tag-secondary-color: ${theme.experience.project.tag.secondary};\n` +
+          `  --project-tag-primary-background-color: ${theme.experience.project.tag.primary.background};\n` +
+          `  --project-tag-primary-text-color: ${theme.experience.project.tag.primary.text};\n` +
+          `  --project-tag-secondary-background-color: ${theme.experience.project.tag.secondary.background};\n` +
+          `  --project-tag-secondary-text-color: ${theme.experience.project.tag.secondary.text};\n` +
           `}`;
 
         const head = document.head || document.getElementsByTagName('head')[0];

@@ -77,7 +77,7 @@
     }
 
     .experience-task {
-      color: var(--app-subtitle-color);
+      color: var(--experience-subtitle-color);
       font-size: 15px;
       margin-bottom: 10px;
       user-select: none;
@@ -97,11 +97,12 @@
         margin-top: 15px;
 
         .tag {
-          background: var(--experience-tag-primary-color);
+          background: var(--experience-tag-primary-background-color);
+          color: var(--experience-tag-primary-text-color);
 
           &.tag-secondary {
-            background: var(--experience-tag-secondary-color);
-            color: white;
+            background: var(--experience-tag-secondary-background-color);
+            color: var(--experience-tag-secondary-text-color);
           }
         }
       }
@@ -128,11 +129,12 @@
             }
 
             .tag {
-              background: var(--project-tag-primary-color);
+              background: var(--project-tag-primary-background-color);
+              color: var(--project-tag-primary-text-color);
 
               &.tag-secondary {
-                background: var(--project-tag-secondary-color);
-                color: white;
+                background: var(--project-tag-secondary-background-color);
+                color: var(--project-tag-secondary-text-color);
               }
             }
           }
