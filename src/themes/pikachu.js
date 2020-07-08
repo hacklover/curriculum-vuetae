@@ -4,7 +4,7 @@ export default {
       background: '#ecca12',
       heading: '#222',
       text: 'black',
-      link: '#9a8200',
+      link: '#3171bd',
       separator: '#dab800',
       table: 'rgba(0, 0, 0, 0.03)'
     },
@@ -35,12 +35,12 @@ export default {
     text: 'rgba(0, 0, 0, 0.75)'
   },
   experience: {
-    title: '#8c710a',
+    title: '#1693b9',
     subtitle: '#a99300',
     text: 'rgba(0, 0, 0, 0.75)',
     tag: {
       primary: {
-        background: '#3494ff',
+        background: '#1d1d1d',
         text: 'white'
       },
       secondary: {
