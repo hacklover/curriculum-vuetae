@@ -60,7 +60,7 @@
       async loadActiveTheme() {
         const themeName = curriculumConfig.theme.name;
 
-        return import(`./themes/${themeName}`)
+        return import(`./themes/${themeName}/theme`)
           .then(theme => theme.default)
           .catch(() => {
             console.error(`Unable to load "${themeName}" theme from "src/themes/" folder`)

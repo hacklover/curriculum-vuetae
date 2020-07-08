@@ -1,3 +1,6 @@
+// overwrite default styles
+import './styles.less'
+
 export default {
   app: {
     common: {
@@ -6,7 +9,7 @@ export default {
       text: 'black',
       link: '#3171bd',
       separator: '#dab800',
-      table: 'rgba(0, 0, 0, 0.03)'
+      table: 'initial'
     },
     nav: {
       background: 'initial',
