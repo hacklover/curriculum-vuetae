@@ -2,9 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       Made with
-      <a href="https://github.com/hacklover/curriculum-vuetae" target="_blank">Curriculum Vuetae</a> &middot;
-      <a href="https://github.com/hacklover/curriculum-vuetae" target="_blank">GitHub</a> &middot;
-      <a href="https://patreon.com/hacklover" target="_blank">Donate</a>
+      <a href="https://github.com/hacklover/curriculum-vuetae" target="_blank">Curriculum Vuetae</a>
 
       <br />
 
