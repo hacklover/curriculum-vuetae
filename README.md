@@ -4,6 +4,7 @@
 <p>
     <a href="https://github.com/hacklover/curriculum-vuetae/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" /></a>
     <a href="https://buefy.org"><img src="https://img.shields.io/badge/code_style-buefy-7957d5.svg?style=flat-square" /></a>
+    <a href="https://www.patreon.com/hacklover"><img src="https://img.shields.io/badge/become-a%20patron-orange" alt="Become a Patron" /></a>
 </p>
 
 ## Features
