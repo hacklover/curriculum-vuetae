@@ -68,11 +68,19 @@
       background: var(--app-table-color);
       border-collapse: inherit;
 
-      td.td-separator {
-        padding: 0;
+      tr {
+        td {
+          &:first-child {
+            width: 40%;
+          }
 
-        hr {
-          background: var(--app-separator-color);
+          &.td-separator {
+            padding: 0;
+
+            hr {
+              background: var(--app-separator-color);
+            }
+          }
         }
       }
     }

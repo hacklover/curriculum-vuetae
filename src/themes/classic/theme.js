@@ -49,11 +49,11 @@ export default {
       }
     },
     project: {
-      title: '#25a5ac',
+      title: '#2fb1b9',
       text: '#888',
       tag: {
         primary: {
-          background: '#47b2b9',
+          background: '#2fb1b9',
           text: 'white'
         },
         secondary: {

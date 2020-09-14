@@ -1,9 +1,7 @@
 # Curriculum Vuetae
-> A simple curriculum vitae boilerplate that supports multiple languages, made with Vue.js
+> A simple curriculum vitae boilerplate made with Vue.js that supports multiple languages
 
 <p>
-    <a href="https://www.patreon.com/hacklover"><img src="https://img.shields.io/badge/become-a%20patron-orange" alt="Become a Patron" /></a>
-    <a href="https://discordapp.com/invite/rKU8YaE"><img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" /></a>
     <a href="https://github.com/hacklover/curriculum-vuetae/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" /></a>
     <a href="https://buefy.org"><img src="https://img.shields.io/badge/code_style-buefy-7957d5.svg?style=flat-square" /></a>
 </p>
@@ -11,9 +9,9 @@
 ## Features
 - Build your modern curriculum vitae
 - Supports multiple languages
-- Fields and sections dynamically rendered 
-- Easily customizable theme colors
 - Supports multiple themes
+- Easily customizable themes
+- Easy text management
 - Made with [Vue.js](https://vuejs.org) & [Buefy](https://buefy.org)
 
 ## Quick start
@@ -44,5 +42,5 @@ npm run build
 npm run lint
 ```
 
-### License
+## License
 Code released under [MIT](https://github.com/hacklover/curriculum-vuetae/blob/master/LICENSE) license.

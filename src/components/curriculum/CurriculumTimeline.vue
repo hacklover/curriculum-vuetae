@@ -25,7 +25,9 @@
             v-text="descriptionParagrah"
           />
         </div>
+      </template>
 
+      <template v-slot:experiences>
         <!-- experience projects -->
         <template v-if="experience.projectSections && experience.projectSections.length > 0">
           <div class="experience-project-sections">
@@ -49,8 +51,8 @@
                       <!-- project description -->
                       <template v-if="project.description && project.description.length > 0">
                         <p
-                          v-for="(projectDescriptionParagrah, p) of project.description" :key="p"
-                          v-text="projectDescriptionParagrah"
+                            v-for="(projectDescriptionParagrah, p) of project.description" :key="p"
+                            v-text="projectDescriptionParagrah"
                         />
                       </template>
 
@@ -58,13 +60,13 @@
                       <template v-if="project.tags && project.tags.length > 0">
                         <b-taglist>
                           <b-tag
-                            v-for="(tag, t) of project.tags" :key="t"
-                            type="is-info" v-text="tag"
+                              v-for="(tag, t) of project.tags" :key="t"
+                              type="is-info" v-text="tag"
                           />
                           <span class="tags-secondary">
                             <b-tag
-                              v-for="(tag, ts) of project.tagsSecondary" :key="ts"
-                              type="tag-secondary" v-text="tag"
+                                v-for="(tag, ts) of project.tagsSecondary" :key="ts"
+                                type="tag-secondary" v-text="tag"
                             />
                           </span>
                         </b-taglist>

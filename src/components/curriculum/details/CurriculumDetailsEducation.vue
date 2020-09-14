@@ -6,7 +6,7 @@
     <template v-slot:description>
 
       <div class="row" v-for="(item, i) of content" :key="i">
-        <b v-text="item.title" />
+        <b v-text="item.name" />
         <p class="subtitle" v-text="item.type" />
         <p v-text="item.description" />
       </div>

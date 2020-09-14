@@ -1,6 +1,6 @@
 {
   "common": {
-    "curriculumVitae": "Curriculum vitae"
+    "curriculumVitae": "Curriculum Vuetae"
   },
   "header": {
     "title": "Ash Ketchum",
@@ -40,12 +40,12 @@
       "title": "Istruzione",
       "content": [
         {
-          "title": "Oak Summer Camp",
+          "name": "Oak Summer Camp",
           "type": "Pokémon Summer Camp",
           "description": "Partecipazione al campo estivo organizzato da Professor Oak. "
         },
         {
-          "title": "Alola Trainers' School",
+          "name": "Alola Trainers' School",
           "type": "Pokémon Academy",
           "description": "Studi presso l'accademia Pokémon situata nell'isola Melemele (Alola)."
         }

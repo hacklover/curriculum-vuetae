@@ -63,7 +63,7 @@
         return import(`./themes/${themeName}/theme`)
           .then(theme => theme.default)
           .catch(() => {
-            console.error(`Unable to load "${themeName}" theme from "src/themes/" folder`)
+            console.error(`Unable to load "${themeName}" theme in "src/themes" folder`)
             return false
           })
       },
@@ -167,8 +167,8 @@
     }
 
     main {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 35px;
+      padding-bottom: 35px;
 
       .column-side {
         padding-left: 0;

@@ -28,6 +28,7 @@
       <div class="experience-description">
         <slot name="description" />
         <slot name="tags" />
+        <slot name="experiences" />
       </div>
 
     </div>
@@ -109,6 +110,10 @@
     }
 
     .experience-project-sections {
+      > div:not(:last-child) {
+        margin-bottom: 30px !important;
+      }
+
       ul {
         li {
           .project {
