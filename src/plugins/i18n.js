@@ -6,7 +6,11 @@ Vue.use(VueI18n)
 const messages = {}
 
 curriculumConfig.locale.list.forEach(locale => {
-  messages[locale] = require(`../locales/${locale}.json`)
+  try {
+    messages[locale] = require(`../../locales/${locale}.json`)
+  } catch(e) {
+    messages[locale] = require(`../locales/${locale}.json`)
+  }
 })
 
 const i18n = new VueI18n({
