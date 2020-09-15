@@ -10,15 +10,14 @@ export default {
 
   // themes folder: "src/themes/"
   theme: {
-    name: 'pikachu',
+    name: 'default',
     showNav: true,
     showLogo: true
   },
 
-  // feel free to hide the copyright notice but remember to
-  // donate if you like or you have been hired using Curriculum Vuetae :D
-  showCopyright: true
+  // feel free to hide the copyright notice but donate
+  // if you like it or if you have been hired using Curriculum Vuetae
 
-  // thank you <3
   // https://www.patreon.com/hacklover
+  showCopyright: true
 }
