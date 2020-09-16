@@ -7,8 +7,8 @@
     "subtitle": "Pokémon Trainer, Champion of Orange League"
   },
   "details": {
-    "informations": {
-      "title": "Informations",
+    "information": {
+      "title": "Information",
       "content": [
         {
           "title": "Name and surname",

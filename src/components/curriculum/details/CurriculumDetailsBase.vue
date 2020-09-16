@@ -1,7 +1,7 @@
 <template>
   <Card
     class="card-curriculum-details-base"
-    :title="$t('details.informations.title')"
+    :title="$t('details.information.title')"
   >
     <template v-slot:description>
 
@@ -56,7 +56,7 @@
     components: {Card},
     computed: {
       content() {
-        return this.$t('details.informations.content')
+        return this.$t('details.information.content')
       }
     }
   }

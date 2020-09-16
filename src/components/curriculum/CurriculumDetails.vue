@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <template v-if="$te('details.informations')">
+    <template v-if="$te('details.information')">
       <CurriculumDetailsBase />
     </template>
 
