@@ -7,6 +7,10 @@
     "subtitle": "Pokémon Trainer, Champion of Orange League"
   },
   "details": {
+    "about": {
+      "title": "About",
+      "content": "Main protagonist of the Pokémon Anime series. Pokémon trainer."
+    },
     "information": {
       "title": "Information",
       "content": [

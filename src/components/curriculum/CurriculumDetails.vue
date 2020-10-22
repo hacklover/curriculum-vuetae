@@ -5,6 +5,10 @@
       <CurriculumDetailsBase />
     </template>
 
+    <template v-if="$te('details.about')">
+      <CurriculumDetailsAbout />
+    </template>
+
     <template v-if="$te('details.education')">
       <CurriculumDetailsEducation />
     </template>
@@ -30,13 +34,17 @@
   import CurriculumDetailsLanguageSkills from "./details/CurriculumDetailsLanguageSkills";
   import CurriculumDetailsYearsOfExperience from "./details/CurriculumDetailsYearsOfExperience";
   import CurriculumDetailsProfessionalSkills from "./details/CurriculumDetailsProfessionalSkills";
+  import CurriculumDetailsAbout from "@/components/curriculum/details/CurriculumDetailsAbout";
 
   export default {
     name: "CurriculumDetails",
     components: {
-      CurriculumDetailsProfessionalSkills,
+      CurriculumDetailsBase,
+      CurriculumDetailsAbout,
+      CurriculumDetailsEducation,
+      CurriculumDetailsLanguageSkills,
       CurriculumDetailsYearsOfExperience,
-      CurriculumDetailsLanguageSkills, CurriculumDetailsEducation, CurriculumDetailsBase
+      CurriculumDetailsProfessionalSkills
     }
   }
 </script>
