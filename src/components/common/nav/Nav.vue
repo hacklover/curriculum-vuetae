@@ -4,7 +4,7 @@
     <div class="container">
 
       <!-- nav title -->
-      <div class="navbar-brand">
+      <div class="navbar-brand navbar-align-left">
         <strong class="navbar-item" v-text="$t('common.curriculumVitae')" />
       </div>
 
@@ -44,6 +44,14 @@
       .navbar-item {
         padding-left: 0;
         color: var(--app-nav-text-color);
+      }
+
+      &.navbar-align-left {
+        display: block;
+
+        .navbar-item {
+          line-height: 2.25rem;
+        }
       }
     }
 
