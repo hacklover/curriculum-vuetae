@@ -1,6 +1,6 @@
 <template>
   <div class="common-card">
-    <h4 class="common-card-title title is-5 is-bold" v-text="title" />
+    <CardTitle :title="title" />
 
     <div class="common-card-content content">
       <div class="columns">
@@ -19,8 +19,10 @@
 </template>
 
 <script>
+  import CardTitle from "@/components/curriculum/template/CardTitle";
   export default {
     name: "Card",
+    components: {CardTitle},
     props: {
       title: String
     }
@@ -35,14 +37,6 @@
 
     a {
       color: var(--app-link-color);
-    }
-
-    .common-card-title {
-      color: var(--app-heading-color);
-      margin-bottom: 15px;
-      padding-bottom: 13px;
-      border-bottom: 1px solid var(--app-separator-color);
-      user-select: none;
     }
 
     .common-card-content {
