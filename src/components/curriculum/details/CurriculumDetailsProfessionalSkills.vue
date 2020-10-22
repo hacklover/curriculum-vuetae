@@ -3,7 +3,7 @@
     class="card-curriculum-details-professional-skills"
     :title="$t('details.professionalSkills.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <template v-for="(item, i) of content">
         <p v-text="item" :key="i" />

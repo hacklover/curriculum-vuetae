@@ -3,7 +3,7 @@
     class="card-curriculum-details-years-of-experience"
     :title="$t('details.yearsOfExperience.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <div class="row" v-for="(item, i) of content" :key="i">
         <b v-text="item.title" />
@@ -31,7 +31,7 @@
 
 <style scoped lang="less">
   .card-curriculum-details-years-of-experience {
-    .column-description .row {
+    .column-content .row {
       &:not(:last-child) {
         margin-bottom: 15px;
       }

@@ -3,7 +3,7 @@
     class="card-curriculum-details-base"
     :title="$t('details.information.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <table>
         <tbody>

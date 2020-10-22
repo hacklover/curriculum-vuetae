@@ -3,7 +3,7 @@
     class="card-curriculum-details-education"
     :title="$t('details.education.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <div class="row" v-for="(item, i) of content" :key="i">
         <b v-text="item.name" />

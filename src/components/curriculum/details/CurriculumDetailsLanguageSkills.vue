@@ -3,7 +3,7 @@
     class="card-curriculum-details-language-skills"
     :title="$t('details.languageSkills.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <div class="columns columns-flow-root">
         <div class="column is-half" v-for="(item, i) of content" :key="i">

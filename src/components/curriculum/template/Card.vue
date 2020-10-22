@@ -9,8 +9,8 @@
           <slot name="info" />
         </div>
 
-        <div class="column column-description">
-          <slot name="description" />
+        <div class="column column-content">
+          <slot name="content" />
         </div>
 
       </div>
@@ -76,7 +76,7 @@
         }
       }
 
-      .column-description {
+      .column-content {
         color: var(--details-text-color);
         font-size: 15px;
 

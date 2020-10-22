@@ -3,7 +3,7 @@
     class="card-curriculum-details-about"
     :title="$t('details.about.title')"
   >
-    <template v-slot:description>
+    <template v-slot:content>
 
       <div v-html="content" />
 
