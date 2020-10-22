@@ -1,6 +1,8 @@
 <template>
   <div class="timeline">
 
+    <CardTitle :title="$t('timelineTitle')" class="is-hidden-tablet" />
+
     <Experience
       v-for="(experience, i) of content"
       :key="i"
@@ -104,10 +106,12 @@
 
 <script>
   import Experience from './template/Experience.vue'
+  import CardTitle from "@/components/curriculum/template/CardTitle";
 
   export default {
     name: "CurriculumTimeline",
     components: {
+      CardTitle,
       Experience
     },
     computed: {

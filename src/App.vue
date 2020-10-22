@@ -186,11 +186,12 @@
         }
       }
 
-      @media (max-width: 1020px) {
+      @media (max-width: 845px) {
         margin-bottom: 0;
 
         .column-side {
-          padding: 13px;
+          padding: 0 13px 13px 13px;
+          margin-top: -13px;
         }
       }
     }
