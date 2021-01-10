@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import curriculumConfig from '../../cv.config'
+import curriculumConfig from '@/../cv.config'
 Vue.use(VueI18n)
 
 const messages = {}
 
 curriculumConfig.locale.list.forEach(locale => {
   try {
-    messages[locale] = require(`../../locales/${locale}.json`)
+    messages[locale] = require(`@/../locales/${locale}.json`)
   } catch(e) {
-    messages[locale] = require(`../locales/${locale}.json`)
+    messages[locale] = require(`@/locales/${locale}.json`)
   }
 })
 

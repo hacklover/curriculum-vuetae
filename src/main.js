@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from '@/App.vue'
 
 // Buefy
 // https://buefy.org/documentation/
-import './plugins/buefy'
+import '@/plugins/buefy'
 
 // Vue i18n
 // https://kazupon.github.io/vue-i18n/
-import i18n from './plugins/i18n'
+import i18n from '@/plugins/i18n'
 
 // Vue common settings
 Vue.config.productionTip = false

@@ -28,7 +28,7 @@
 </template>
 
 <script>
-  import curriculumConfig from '../cv.config'
+  import curriculumConfig from '@/../cv.config'
 
   import Nav from './components/common/nav/Nav.vue'
   import Header from './components/common/header/Header.vue'

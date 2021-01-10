@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import curriculumConfig from '../../../../cv.config'
+  import curriculumConfig from '@/../cv.config'
 
   export default {
     name: "Header",
