@@ -62,13 +62,15 @@
                       <template v-if="project.tags && project.tags.length > 0">
                         <b-taglist>
                           <b-tag
+                              type="is-info"
                               v-for="(tag, t) of project.tags" :key="t"
-                              type="is-info" v-text="tag"
+                              v-text="tag"
                           />
                           <span class="tags-secondary">
                             <b-tag
+                                type="tag-secondary"
                                 v-for="(tag, ts) of project.tagsSecondary" :key="ts"
-                                type="tag-secondary" v-text="tag"
+                                v-text="tag"
                             />
                           </span>
                         </b-taglist>
@@ -88,13 +90,15 @@
       <template v-slot:tags v-if="experience.tags && experience.tags.length > 0">
         <b-taglist>
           <b-tag
+            type="is-info"
             v-for="(tag, t) of experience.tags" :key="t"
-            type="is-info" v-text="tag"
+            v-text="tag"
           />
           <span class="tags-secondary">
             <b-tag
+              type="tag-secondary"
               v-for="(tag, ts) of experience.tagsSecondary" :key="ts"
-              type="tag-secondary" v-text="tag"
+              v-text="tag"
             />
           </span>
         </b-taglist>
