@@ -54,7 +54,7 @@
                       <template v-if="project.description && project.description.length > 0">
                         <p
                             v-for="(projectDescriptionParagrah, p) of project.description" :key="p"
-                            v-text="projectDescriptionParagrah"
+                            v-html="projectDescriptionParagrah"
                         />
                       </template>
 
