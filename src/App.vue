@@ -144,7 +144,7 @@
 
 <style lang="less">
   html {
-    background-color: #EEE !important;
+    background: var(--app-background-color);
   }
 
   #app {
