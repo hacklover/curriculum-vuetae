@@ -200,4 +200,19 @@
       user-select: none;
     }
   }
+
+  @media print {
+    nav {
+      display: none;
+    }
+
+    header .hero-body, main {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .column.is-two-fifths, .column.is-two-fifths-tablet {
+      width: 42% !important;
+    }
+  }
 </style>
