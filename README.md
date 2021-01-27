@@ -9,11 +9,9 @@
 </p>
 
 ## Features
-- Build your modern curriculum vitae
 - Supports multiple languages
 - Supports multiple themes
 - Easily customizable themes
-- Easy text management
 - Made with [Vue.js](https://vuejs.org) & [Buefy](https://buefy.org)
 
 ## Quick start
@@ -23,11 +21,11 @@
   ```
 
 - Configure available languages and the active theme by editing `cv.config.js`
-- Fill your CV with details and experiences by editing `src/locales/<your-lang>.json` 
+- Fill the CV with your information by editing `src/locales/<your-lang>.json` 
 - Customize the background header replacing it in `public/assets/background.jpg`
 - Customize theme colors by editing `src/themes/<your-theme>/theme.js`
-- Check the commands below to enable live preview and to compile your curriculum vitae
-- You can publish it on Netlify, GitHub, or export it as PNG/PDF with some browser extension like [FireShot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
+- Check the commands below to run it in development mode or to build it as a static website
+- You can publish it on Netlify, GitHub, or export it as PNG/PDF using your browser
 
 ### Compiles and hot-reloads for development
 ```
