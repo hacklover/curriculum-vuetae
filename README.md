@@ -8,6 +8,8 @@
     <a href="https://discord.com/invite/xHBSEZR7sn"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Join us on Discord" /></a>
 </p>
 
+See the demo at [curriculum-vuetae.netlify.app](https://curriculum-vuetae.netlify.app)
+
 ## Features
 - Supports multiple languages
 - Supports multiple themes
@@ -15,27 +17,38 @@
 - Made with [Vue.js](https://vuejs.org) & [Buefy](https://buefy.org)
 
 ## Quick start
+- Clone the repository
+```
+git clone git@github.com:hacklover/curriculum-vuetae.git
+```
+- Enter the project directory
+```
+cd curriculum-vuetae
+```
 - Install dependencies
-  ```
-  npm install
-  ```
-
-- Configure available languages and the active theme by editing `cv.config.js`
-- Fill the CV with your information by editing `src/locales/<your-lang>.json` 
-- Customize the background header replacing it in `public/assets/background.jpg`
-- Customize theme colors by editing `src/themes/<your-theme>/theme.js`
-- Check the commands below to run it in development mode or to build it as a static website
-- You can publish it on Netlify, GitHub, or export it as PNG/PDF using your browser
+```
+npm install
+```
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
+- Configure your Curriculum Vuetae from here  
+  `<project-path>/cv.config.js`
+- Customize theme colors by editing this file  
+  `<project-path>/src/themes/<your-theme>/theme.js`
+- Fill the CV with your information by editing these files  
+  `<project-path>/src/locales/<your-lang>.json`
+- Customize the background header replacing it  
+  `<project-path>/public/assets/background.jpg`
+
 ### Compiles and minifies for production
 ```
 npm run build
 ```
+- You can publish it on Netlify, GitHub, or export it as PNG/PDF using your browser
 
 ### Lints and fixes files
 ```
