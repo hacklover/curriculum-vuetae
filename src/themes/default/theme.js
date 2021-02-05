@@ -5,7 +5,7 @@ export default {
       heading: '#a2a2a2',
       text: '#2c3e50',
       link: '#167df0',
-      separator: '#D5D5D5',
+      separator: '#00000012',
       table: 'rgba(0, 0, 0, 0.03)'
     },
     nav: {
