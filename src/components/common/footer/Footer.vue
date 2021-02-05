@@ -3,11 +3,6 @@
     <div class="content has-text-centered">
       Made with
       <a href="https://github.com/hacklover/curriculum-vuetae" target="_blank">Curriculum Vuetae</a>
-
-      <br />
-
-      Released under MIT License &middot;
-      Copyright (c) 2020 <a href="https://hacklover.net" target="_blank">hacklover</a>
     </div>
   </footer>
 </template>
